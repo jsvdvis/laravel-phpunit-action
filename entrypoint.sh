@@ -4,6 +4,7 @@ composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scr
 
 cp .env.example .env
 
+php artisan migrate
 php artisan key:generate
 
 php vendor/bin/phpunit
